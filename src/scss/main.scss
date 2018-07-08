@@ -1,0 +1,59 @@
+// Vendors
+@import 'vendors/normalize';
+@import 'vendors/bootstrap/bootstrap';
+@import 'vendors/slick-carousel/slick.scss';
+
+// mixins
+
+@import "mixins/font";
+@import "mixins/fluid-properties";
+@import "mixins/responsive-ratio";
+@import "mixins/triangle";
+@import "mixins/antialias";
+@import "mixins/appearance";
+@import "mixins/responsive-mixins";
+@import "mixins/unclickable";
+@import "mixins/pseudo";
+@import "mixins/input-placeholder";
+@import "mixins/push-auto";
+@import "mixins/center";
+@import "mixins/breakpoints";
+@import "mixins/resize";
+@import "mixins/screen-reader";
+@import "mixins/text-truncate";
+@import "mixins/unselectable";
+@import "mixins/lists";
+@import "mixins/background-variant";
+@import "mixins/border-radius";
+@import "mixins/gradients";
+@import "mixins/clearfix";
+@import "mixins/float";
+
+
+
+// Abstracts
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/helpers';
+
+@import 'components/imageload';
+@import 'components/images';
+@import 'components/animation';
+@import 'components/button';
+@import 'components/thumb';
+// Templates
+@import "templates/slider";
+@import "templates/banner";
+@import "templates/tabs";
+@import "templates/title";
+
+
+// @import 'pages/';
+//
+// @import 'themes/';
+//
+// @import 'language/';

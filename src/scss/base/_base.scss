@@ -1,0 +1,201 @@
+
+html {
+  @include fp(font-size,$font-base-mobile,$font-base);
+}
+
+body, html {
+  margin: 0 !important;
+  padding: 0;
+  color: $body-color;
+}
+body {
+  font-family: $font-family-base;
+  font-weight: $font-weight-normal;
+	@include antialias;
+}
+[data-theme-color = "grey"] {
+  background-color: #f0f1f2;
+}
+.title-bar {
+ background-color: $color-bar;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  @include media-breakpoint-up(md) {
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .outer {
+    position: relative;
+    .inner {
+      justify-content: space-between;
+      @include fp('padding-left', 50, 55);
+      display: flex;
+      flex-wrap: wrap;
+      .title {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        h3 {
+          @include fp('font-size', 16,14);
+          color: $white;
+          @include media-breakpoint-up(md) {
+            max-width: 400px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+.power-seller {
+  color: currentColor;
+  @include fp('font-size', 16, 11);
+  background-image: url(../images/icon-best.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 25px;
+  padding-right: 10px;
+  line-height: 1.9;
+}
+.plus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/icon-plus.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 49px;
+  z-index: 4;
+  @include bf-visibility;
+}
+.rank {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 30px;
+  padding: 5px;
+  color: $white;
+  font-weight: bold;
+  @include fp('font-size', 16, 12);
+  line-height: 1;
+  text-align: center;
+  font-family: $font-tahoma;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -15px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+  }
+  &[data-first-group] {
+    background-color: $red;
+    &:after {
+      border-top: 10px solid $red;
+    }
+  }
+}
+.icon-video-wrapper {
+  @include fp('width', 65, 78);
+  @include fp('height', 65, 78);
+  .icon-video {
+    fill: $white;
+    fill-opacity: 0.85;
+  }
+}
+.section-layout {
+  position: relative;
+  &[data-layout-desktop-column] {
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &[data-layout-column] {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.arrow-nav-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  pointer-events: none;
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 3;
+    @include bf-visibility;
+  }
+  &.is-hide {
+    display: none;
+  }
+  .arrow-nav {
+    color: $white;
+    cursor: pointer;
+    width: 33px;
+    height: 38px;
+    pointer-events: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.3);
+  }
+}
+.section-title {
+  padding-bottom: 15px;
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  h2 {
+    @include fp('font-size', 16, 15);
+    font-weight: bold;
+    line-height: 1.4;
+  }
+  .description {
+    @include fp('font-size', 14, 12);
+    @include media-breakpoint-up(lg) {
+      padding-left: 15px;
+    }
+  }
+}
+.overlay-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,.5);
+  @include bf-visibility;
+  color: $white;
+  text-align: center;
+  padding: 15px;
+  z-index: 4;
+  .info {
+    @include fp('font-size', 18, 18);
+  }
+}
+.desktop {
+  .arrow-nav-wrapper {
+    .arrow-nav {
+      transition: background-color .4s;
+      .arrow-left, .arrow-right {
+        transition: fill .4s;
+      }
+    }
+  }
+}

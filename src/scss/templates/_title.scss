@@ -1,0 +1,21 @@
+.main-heading-section {
+  @include fp('padding-top', 20, 45);
+  @include fp('padding-bottom', 10, 15);
+  .section-layout {
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 3px solid $blue;
+    padding-bottom: 5px;
+  }
+  .title {
+    @include fp('font-size', 20, 24);
+    font-family: $font-helvetica;
+    font-weight: bold;
+    color: $blue;
+    [class*=icon-] {
+      vertical-align: text-bottom;
+      margin-right: 10px;
+      font-size: 1.3em;
+    }
+  }
+}

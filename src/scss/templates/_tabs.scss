@@ -1,0 +1,74 @@
+.tabs-section {
+  @include fp('padding-top', 20, 45);
+  @include fp('padding-bottom', 20, 45);
+  .section-inner {
+    display: flex;
+    flex-wrap: wrap;
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+    .thumb {
+      @include fp('padding-left', 15, 25);
+      @include fp('padding-right', 15, 25);
+      &:not(:last-child):not(.slick-cloned) {
+        @include media-breakpoint-up(md) {
+          border-right: 1px solid #ccc;
+        }
+      }
+    }
+    .slider-wrapper {
+      position: relative;
+      @include fp('padding-top', 15, 20);
+      @include fp('padding-bottom', 15, 20);
+    }
+  }
+}
+
+// override bootstrap
+.nav-tabs {
+  border-bottom-color: $dark-gray;
+  border-right: 0;
+  .nav-item {
+    margin-right: 0;
+    @include media-breakpoint-down(md) {
+      margin-right: -1px;
+      width: 33.3333%;
+    }
+  }
+  .nav-link {
+    border-radius: 0;
+    @include fp('font-size', 12, 12);
+    border-color: #dee2e6 #dee2e6 $dark-gray $white;
+    background-color: #f9f9f9;
+    @include media-breakpoint-down(md) {
+      border-color: $dark-gray;
+    }
+    &.active {
+      font-weight: bold;
+      background-color: $white;
+      border-color: $dark-gray $dark-gray $white;
+      @include media-breakpoint-down(md) {
+        border-color: $dark-gray;
+      }
+    }
+  }
+}
+.tab-content {
+  padding: 30px 15px 0;
+  max-width: 100%;
+}
+
+.desktop {
+  .nav-tabs {
+    .nav-link {
+      &:hover {
+        color:  currentColor;
+        background-color: $white;
+        border-color: $dark-gray;
+        @include media-breakpoint-up(lg) {
+          border-color: $dark-gray  $dark-gray $white;
+        }
+      }
+    }
+  }
+}

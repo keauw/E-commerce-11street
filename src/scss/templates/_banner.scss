@@ -1,0 +1,59 @@
+.banner-section {
+  position: relative;
+  border: 1px solid #cccccc;
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    @include bf-visibility;
+  }
+  .section-layout {
+    padding-left: 15px;
+    padding-right: 15px;
+    @include media-breakpoint-up(lg) {
+      padding-left: percentage(75/980);
+      padding-right: percentage(100/980);
+      align-items: center;
+    }
+  }
+  .image-box {
+    @include media-breakpoint-up(md) {
+      flex: 1 0 percentage(335/980);
+    }
+    .figure {
+      &[class*=ratio-] {
+        .figure-outer {
+          &:before {
+            padding-top: percentage(180/355);
+          }
+        }
+      }
+    }
+  }
+  .content-box {
+    color: $light-grey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @include media-breakpoint-up(md) {
+      flex: 1 0 percentage(645/980);
+    }
+    .title {
+      text-transform: uppercase;
+      line-height: 1;
+      font-family: $font-helvetica;
+      margin-bottom: 10px;
+      strong {
+        font-weight: bold;
+      }
+    }
+    .sub-title {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      @include fp('font-size', 13, 15);
+      color: $dark-gray;
+    }
+  }
+}

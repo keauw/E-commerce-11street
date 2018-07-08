@@ -1,0 +1,230 @@
+
+//
+// Headings
+//
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $headings-color;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: 1.5;
+  letter-spacing: $headings-letter-spacing;
+  margin: $headings-margin-bottom;
+  b, strong {
+    font-weight: $headings-font-weight;
+    font-style: normal;
+  }
+  i, em {
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+h1, .h1 {
+  font-size: $font-size-h1;
+  @include media-breakpoint-down(md) {
+    @include fp(font-size, 32, 62);
+  }
+}
+h2, .h2 {
+  @include fp(font-size, 32, 46);
+}
+h3, .h3 {
+  @include fp(font-size, 32, 32);
+}
+h4, .h4 {
+  font-size: $font-size-h4;
+}
+h5, .h5 {
+  font-size: $font-size-h5;
+}
+h6, .h6 {
+  font-size: $font-size-h6;
+}
+
+// Type display classes
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-family: $display-font-family;
+  font-weight: $display-font-weight;
+  line-height: $display-line-height;
+  letter-spacing: $display-letter-spacing;
+  text-transform: $display-text-transform;
+  b, strong {
+    font-weight: $headings-font-weight;
+    font-style: normal;
+  }
+  i, em {
+    //font-family: $font-semibold-italic;
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+.display-1 {
+  font-size: $display1-size;
+}
+.display-2 {
+  font-size: $display2-size;
+  @include media-breakpoint-down(md) {
+    @include fp(font-size, 32, 70);
+  }
+}
+.display-3 {
+  font-size: $display3-size;
+}
+.display-4 {
+  font-size: $display4-size;
+  @include media-breakpoint-down(md) {
+    @include fp(font-size, 32, 44);
+  }
+}
+.display-5 {
+  font-size: $display5-size;
+}
+.display-6 {
+  font-size: $display6-size;
+}
+
+p, .p, ul, ul li, ol, ol li {
+  color: $color-base;
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base-mobile;
+  line-height: $line-height-base;
+  letter-spacing: $letter-spacing-base;
+  text-transform: $text-transform-base;
+  margin: $margin-bottom-base;
+  @include media-breakpoint-up(lg) {
+    font-size: $font-size-base;
+  }
+  b, strong {
+    font-weight: $font-weight-normal;
+    font-style: normal;
+    line-height: 1;
+    i, em {
+      //font-family: $font-semibold-italic;
+      font-weight: normal;
+      font-style: normal;
+    }
+  }
+  i, em {
+    //font-family: $font-regular-italic;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    b, strong {
+      //font-family: $font-semibold-italic;
+      font-weight: normal;
+      font-style: normal;
+    }
+  }
+}
+
+ul, ol {
+  margin: 0;
+  + ul, + ol, + p, + .p {
+  }
+}
+
+p, .p {
+  + ul, + ol, + p, + .p {
+  }
+}
+a {
+  display: inline-block;
+  color: $color-base;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+small,
+.small {
+  font-size: $small-font-size;
+  font-weight: $small-font-weight;
+}
+
+.desc {
+   &.is--small {
+     * {
+       font-size: em(16,$font-base);
+       line-height: em(20, 16);
+     }
+   }
+   &.is--large {
+     * {
+       font-size: em(20,$font-base);
+       line-height: em(32, 20);
+     }
+   }
+}
+
+// Color
+.text--white {
+  color: $white;
+}
+.text--black {
+  color: $black;
+}
+.text--brand {
+  //color: $brand;
+}
+.text--gray {
+  color: $gray;
+}
+
+// Align text
+.text--center {
+  text-align: center !important;
+}
+.text--right {
+  text-align: right !important;
+}
+.text--left {
+  text-align: left !important;
+}
+
+// Transform
+.text--lowercase  {
+  text-transform: lowercase !important;
+}
+.text--uppercase  {
+  text-transform: uppercase !important;
+}
+.text--capitalize {
+  text-transform: capitalize !important;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-next:before {
+  content: "\e900";
+}
+.icon-arrow-prev:before {
+  content: "\e901";
+}
+.icon-like:before {
+  content: "\e902";
+}
+.icon-home:before {
+  content: "\f015";
+}
+.icon-plane:before {
+  content: "\f072";
+}

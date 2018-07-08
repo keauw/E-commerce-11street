@@ -1,0 +1,346 @@
+
+.scroll_transition {
+  transition: transform 1500ms cubic-bezier(0.190, 1.000, 0.220, 1.000),opacity 1500ms cubic-bezier(0.190, 1.000, 0.220, 1.000) !important;
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+html.touchevents .scroll_transition {
+  transition: none !important;
+}
+
+html.touchevents .scroll_transition.forced {
+  transition: transform 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000),opacity 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000) !important;
+}
+
+.has_transition_800_quint {
+  transition: transform 800ms cubic-bezier(0.230, 1.000, 0.320, 1.000),opacity 800ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_600_inout {
+  transition: transform 600ms cubic-bezier(0.575, 0.005, 0.285, 1.005),opacity 600ms cubic-bezier(0.575, 0.005, 0.285, 1.005);;
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_600_quint {
+  transition: transform 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000),opacity 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_1000_quint {
+  transition: transform 1000ms cubic-bezier(0.230, 1.000, 0.320, 1.000),opacity 1000ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_1200 {
+  transition: transform 1200ms cubic-bezier(0.190, 1.000, 0.220, 1.000), opacity 1200ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_1500 {
+  transition: transform 1500ms cubic-bezier(0.190, 1.000, 0.220, 1.000),opacity 1500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_1500_quint {
+  transition: transform 1500ms cubic-bezier(0.230, 1.000, 0.320, 1.000),opacity 1500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_1000_inout {
+  transition: transform 1000ms cubic-bezier(0.575, 0.005, 0.285, 1.005),opacity 1000ms cubic-bezier(0.575, 0.005, 0.285, 1.005);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_1500_inout {
+  transition: transform 1500ms cubic-bezier(0.575, 0.005, 0.285, 1.005),opacity 1500ms cubic-bezier(0.575, 0.005, 0.285, 1.005);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_1500_inout_quint {
+  transition: transform 1500ms cubic-bezier(0.645, 0.045, 0.355, 1.000),opacity 1500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_1000_inout_quint {
+  transition: transform 1000ms cubic-bezier(0.645, 0.045, 0.355, 1.000),opacity 1000ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+
+.has_transition_1600 {
+  transition: transform 1600ms cubic-bezier(0.190, 1.000, 0.220, 1.000),opacity 1600ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_2000 {
+  transition: transform 2000ms cubic-bezier(0.190, 1.000, 0.220, 1.000),opacity 2000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_2500 {
+  transition: transform 2500ms cubic-bezier(0.190, 1.000, 0.220, 1.000),opacity 2000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_3000 {
+  transition: transform 2000ms cubic-bezier(0.190, 1.000, 0.220, 1.000),opacity 3000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_3000_inout {
+  transition: transform 3000ms cubic-bezier(0.575, 0.005, 0.285, 1.005),opacity 3000ms cubic-bezier(0.575, 0.005, 0.285, 1.005);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_800 {
+  transition: transform 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000),opacity 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_1000 {
+  transition: transform 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000),opacity 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_600 {
+  transition: transform 600ms cubic-bezier(0.190, 1.000, 0.220, 1.000),opacity 600ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.has_transition_3500_inout {
+  transition: transform 3500ms cubic-bezier(0.860, 0.000, 0.070, 1.000),opacity 3500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+}
+
+.transform_only {
+  transition-property: transform, opacity !important;
+}
+
+.transform_all {
+  transition-property: all !important;
+}
+
+.no_opacity {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.no_visibility {
+  visibility: hidden;
+}
+
+.no_width {
+  transform: scale(0,1);
+}
+
+.no_height {
+  transform: scale(1,0);
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.top_single {
+  opacity: 0 !important;
+  transform: translateY(15px);
+}
+
+.top_double {
+  opacity: 0 !important;
+  transform: translateY(35px);
+}
+
+.top_hidden {
+  transform: translateY(101%);
+}
+
+.top_translated {
+  transform: translateY(300px);
+}
+
+.top_translated_full {
+  transform: translateY(100%);
+}
+
+.bottom_hidden {
+  transform: translateY(-100%);
+}
+
+.hidden_by_scaling_full {
+  transform: scale(0.01) !important;
+  pointer-events:none;
+}
+
+.hidden_by_scaling_low {
+  transform: scale(0.95) !important;
+  pointer-events:none;
+  opacity:0;
+}
+
+.no_overflow {
+  overflow:hidden;
+  will-change:transform;
+}
+
+.no_transition {
+  transition: none !important;
+}
+
+.mobile_only {
+  display:none;
+}
+
+.covered {
+  overflow:hidden;
+  position:relative;
+  // will-change: transform;
+
+  .cover-bg {
+    &.hidden {
+      transform:translateX(-30%);
+    }
+  }
+
+  .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+    left: 100%;
+    top: 0;
+    backface-visibility: hidden;
+    &.hidden {
+      transform:translateX(-100%);
+    }
+  }
+
+  .cover-scale {
+    opacity: 0;
+    transform: scale(1.2) translateZ(0);
+    will-change: transform, opacity;
+    backface-visibility:hidden;
+    &.start {
+      opacity: 1;
+      // animation: cover_scale 1.5s 0.8s both;
+      animation: cover_scale 1.5s 0.4s both;
+    }
+  }
+
+  &.vertical {
+    .cover {
+      left:0;
+      top:-100%;
+      &.hidden {
+        transform:translateY(100%);
+      }
+    }
+    .content {
+      &.hidden {
+        transform:translateY(-20%);
+      }
+    }
+  }
+}
+
+html:not(.ie) {
+  .js-hero-parallax {
+    @include media-breakpoint-up(xl) {
+      will-change: transform;
+      backface-visibility:hidden;
+
+      position: absolute;
+      bottom: 0;
+      height: 120%;
+      background-position: center center;
+    }
+    @include media-breakpoint-down(lg) {
+      transform: none !important;
+    }
+  }
+}
+
+.js-scale {
+  opacity: 0;
+  transform: scale(1.2) translateZ(0);
+  will-change: transform, opacity;
+  backface-visibility:hidden;
+  &.start {
+    opacity: 1;
+    // animation: cover_scale 1.5s 0.8s both;
+    animation: cover_scale 1.5s 0s both;
+  }
+}
+.js-animation-reveal-hidden {
+  pointer-events: none;
+}
+.js-animation-reveal .reveal {
+  overflow: hidden;
+  transform: translateY(100%);
+  transition: transform 1.5s cubic-bezier(.35,0,0,1);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.js-animation-reveal .reveal__image,
+.js-animation-reveal .reveal-img {
+  transform: translateY(-100%);
+  transition: transform 1.5s cubic-bezier(.35,0,0,1), opacity 1s cubic-bezier(.25,.46,.45,.94) 0s;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.js-animation-reveal--animate .reveal,
+.js-animation-reveal--animate .reveal__image,
+.js-animation-reveal--animate .reveal-img {
+  transform: translateY(0)
+}
+
+.fade-element {
+  transition: 2s cubic-bezier(.18,1,.21,1);
+  opacity: 0;
+  transform: translateY(20px);
+  backface-visibility: hidden;
+  &.element-fadein {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  &.fade-element-hidden {
+    pointer-events: none;
+  }
+}
+
+
+@keyframes cover_scale {
+  0% {
+    transform: scale(1.2) translateZ(0)
+  }
+
+  100% {
+    transform: scale(1) translateZ(0)
+  }
+}
+

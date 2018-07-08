@@ -1,0 +1,69 @@
+.thumb {
+  position: relative;
+  @include fp('padding-left', 7, 15);
+  @include fp('padding-right', 7, 15);
+  min-height: 310px;
+  .content-box {
+    @include fp('padding-top', 10, 15);
+    @include fp('padding-bottom', 10, 15);
+    .title {
+      @include fp('font-size', 16, 13);
+      @include fp('padding-bottom', 5, 10);
+      height: 47px;
+      overflow: hidden;
+      color: $dark-gray;
+      a {
+        display: inline-block;
+        color: currentColor;
+        height: 100%;
+      }
+    }
+    .old-price {
+      @include fp('font-size', 14, 11);
+      color: $gray;
+    }
+    .new-price {
+      font-weight: bold;
+      @include fp('font-size', 16, 13);
+    }
+    .discount {
+      padding-left: 15px;
+      @include fp('font-size', 14, 11);
+      color: $red;
+    }
+    .price {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .price-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-top: 15px;
+      .del {
+        display: block;
+      }
+      .discount {
+        padding-left: 0;
+        padding-right: 10px;
+        span {
+          display: block;
+          line-height: 1;
+          font-weight: bold;
+          @include fp('font-size', 20, 16);
+        }
+      }
+    }
+  }
+}
+.desktop {
+  .thumb {
+    &:hover {
+      .title {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

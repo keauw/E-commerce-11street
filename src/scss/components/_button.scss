@@ -1,0 +1,86 @@
+
+.btn {
+  + .btn {
+    margin-top: 20px - 5;
+  }
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  padding: 15px 20px;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: normal;
+  border-radius: 0;
+  line-height: 1;
+  letter-spacing: 0.025em;
+  transition: all .3s cubic-bezier(.645, .045, .355, 1);
+  @include unselectable;
+  cursor: pointer;
+  span, svg {
+    color: currentColor;
+    position: relative;
+    display: block;
+    z-index: 1;
+  }
+  svg {
+    fill: currentColor;
+  }
+  &.btn-default {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,.3);
+    padding: 10px;
+    color: $white;
+    transition: all .4s;
+    @include fp('font-size' , 16, 11);
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid $white;
+      margin-left: 5px;
+    }
+  }
+  &.btn-favorite {
+    padding: 5px;
+    @include fp('font-size', 14, 11);
+    color: $blue;
+    border-radius: 5px;
+    border: 1px solid $blue;
+    [class*=icon-] {
+      color: $red;
+      display: inline-block;
+      @include media-breakpoint-up(md) {
+        margin-right: 5px;
+      }
+    }
+    .text {
+      display: none;
+      @include media-breakpoint-up(md) {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.desktop {
+  .btn {
+    &:hover, &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    &.btn-default {
+      &:hover, &:focus {
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+}
+
